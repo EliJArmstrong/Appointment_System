@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgusw2.View_Controller.AppointmentsController">
+   <children>
+      <ComboBox fx:id="customerComboBox" layoutX="25.0" layoutY="247.0" prefHeight="27.0" prefWidth="159.0" promptText="Select a customer" />
+      <ComboBox fx:id="consultantComboBox" layoutX="25.0" layoutY="298.0" prefHeight="27.0" prefWidth="159.0" promptText="Select a consultant" />
+      <Label layoutX="79.0" layoutY="230.0" text="Customer" />
+      <Label layoutX="76.0" layoutY="281.0" text="Consultent" />
+      <DatePicker fx:id="datePicker" layoutX="201.0" layoutY="247.0" promptText="Select a date" />
+      <ComboBox fx:id="timeComboBox" layoutX="202.0" layoutY="298.0" prefHeight="27.0" prefWidth="194.0" promptText="Choose a meeting time" />
+      <Label layoutX="254.0" layoutY="230.0" text="Date (Local)" />
+      <Label layoutX="254.0" layoutY="281.0" text="Time (Local)" />
+      <ComboBox fx:id="typeComboBox" layoutX="404.0" layoutY="247.0" prefHeight="27.0" prefWidth="194.0" promptText="Choose a meeting type" />
+      <Label layoutX="464.0" layoutY="230.0" text="Meeting Type" />
+      <Button layoutX="481.0" layoutY="357.0" mnemonicParsing="false" onAction="#backBtnPressed" prefHeight="29.0" prefWidth="96.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button layoutX="34.0" layoutY="357.0" mnemonicParsing="false" onAction="#saveBtnPressed" prefHeight="27.0" prefWidth="132.0" text="Save">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button layoutX="188.0" layoutY="357.0" mnemonicParsing="false" onAction="#deleteBtnPressed" prefHeight="27.0" prefWidth="132.0" text="Delete" textFill="#e40a0a">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="338.0" layoutY="357.0" mnemonicParsing="false" onAction="#addBtnPressed" prefHeight="27.0" prefWidth="132.0" text="Add Appointment" textFill="#111010">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <TabPane prefHeight="225.0" prefWidth="601.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="All Appointments">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="601.0">
+                     <children>
+                        <TableView fx:id="allAppointmentsTableView" layoutY="1.0" prefHeight="191.0" prefWidth="601.0">
+                          <columns>
+                            <TableColumn fx:id="allCustomerCol" prefWidth="129.0" text="Customer" />
+                            <TableColumn fx:id="allConsultentCol" prefWidth="142.0" text="Consultent" />
+                              <TableColumn fx:id="allTypeCol" prefWidth="130.0" text="Type" />
+                              <TableColumn fx:id="allDateTimeCol" prefWidth="204.0" text="Date and TIme (UTC)" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Next Month">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="nextMonthTableView" prefHeight="192.0" prefWidth="601.0">
+                           <columns>
+                              <TableColumn fx:id="monthCustomerCol" prefWidth="129.0" text="Customer" />
+                              <TableColumn fx:id="monthConsultentCol" prefWidth="142.0" text="Consultent" />
+                              <TableColumn fx:id="monthTypeCol" prefWidth="130.0" text="Type" />
+                              <TableColumn fx:id="monthDateTimeCol" prefWidth="204.0" text="Date and TIme (UTC)" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Next Week">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="nextWeekTableView" prefHeight="193.0" prefWidth="601.0">
+                           <columns>
+                              <TableColumn fx:id="weekCustomerCol" prefWidth="129.0" text="Customer" />
+                              <TableColumn fx:id="weekConsultentCol" prefWidth="142.0" text="Consultent" />
+                              <TableColumn fx:id="weekTypeCol" prefWidth="130.0" text="Type" />
+                              <TableColumn fx:id="weekDateTimeCol" prefWidth="204.0" text="Date and TIme (UTC)" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgusw2.View_Controller.ReportsController">
+   <tabs>
+      <Tab text="Number by Month">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="273.0" layoutY="326.0" mnemonicParsing="false" onAction="#backBtnPressed" text="Back">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="monthTableView" layoutX="14.0" layoutY="14.0" prefHeight="304.0" prefWidth="573.0">
+                     <columns>
+                        <TableColumn fx:id="monthCol" prefWidth="175.0" text="Month" />
+                        <TableColumn fx:id="monthTypeCol" prefWidth="211.0" text="Type" />
+                        <TableColumn fx:id="countCol" prefWidth="185.0" text="Count" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Schedules">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="273.0" layoutY="326.0" mnemonicParsing="false" onAction="#backBtnPressed" text="Back">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="schedulesTableView" layoutX="14.0" layoutY="47.0" prefHeight="271.0" prefWidth="573.0">
+                     <columns>
+                        <TableColumn fx:id="schedulesCustomerCol" prefWidth="172.0" text="Customer" />
+                        <TableColumn fx:id="scheduleAppointmentCol" prefWidth="212.0" text="Type of Appointment" />
+                        <TableColumn fx:id="scheduleDateCol" prefWidth="188.0" text="Date of Appointment (Local)" />
+                     </columns>
+                  </TableView>
+                  <ComboBox fx:id="userComboBox" layoutX="14.0" layoutY="14.0" onAction="#userSelected" prefHeight="27.0" prefWidth="181.0" promptText="Select an Consultant" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Number Appointments By Consultent">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="273.0" layoutY="326.0" mnemonicParsing="false" onAction="#backBtnPressed" text="Back">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="consultentTableView" layoutX="10.0" layoutY="13.0" prefHeight="305.0" prefWidth="571.0">
+                     <columns>
+                        <TableColumn fx:id="consultNameCol" prefWidth="284.0" text="Consultent name" />
+                        <TableColumn fx:id="consultCountCol" prefWidth="286.0" text="Number of Appointments" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentSystem.View_Controller.CustomerController">
+   <children>
+      <TableView fx:id="customerNameTV" layoutX="11.0" layoutY="16.0" prefHeight="354.0" prefWidth="214.0">
+        <columns>
+          <TableColumn fx:id="customerCol" editable="false" prefWidth="213.0" text="Customer Name" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nameField" alignment="CENTER" layoutX="272.0" layoutY="31.0" promptText="Enter Customer Name" />
+      <Label layoutX="303.0" layoutY="14.0" text="Customer Name" />
+      <Label layoutX="325.0" layoutY="65.0" text="Address" />
+      <TextField fx:id="addressField" alignment="CENTER" layoutX="272.0" layoutY="82.0" promptText="Enter Address" />
+      <Label layoutX="320.0" layoutY="119.0" text="Address 2" />
+      <TextField fx:id="address2Field" alignment="CENTER" layoutX="272.0" layoutY="136.0" promptText="Optional" />
+      <Label layoutX="337.0" layoutY="222.0" text="City" />
+      <ComboBox fx:id="cityComboBox" disable="true" layoutX="273.0" layoutY="239.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="167.0" promptText="Select a country first" />
+      <Label layoutX="316.0" layoutY="270.0" text="Postal Code" />
+      <TextField fx:id="postField" alignment="CENTER" layoutX="272.0" layoutY="287.0" promptText="Enter Postal Code" />
+      <Label layoutX="306.0" layoutY="323.0" text="Phone Number" />
+      <TextField fx:id="phoneField" alignment="CENTER" layoutX="272.0" layoutY="340.0" promptText="Enter Phone Number" />
+      <Button layoutX="379.0" layoutY="387.0" mnemonicParsing="false" onAction="#backBtnPressed" prefHeight="48.0" prefWidth="80.0" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveBtn" layoutX="14.0" layoutY="387.0" mnemonicParsing="false" onAction="#saveBtnPressed" prefHeight="50.0" prefWidth="97.0" text="Save">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteBtn" layoutX="123.0" layoutY="389.0" mnemonicParsing="false" onAction="#deleteBtnPressed" text="Delete" textFill="#f20606">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="232.0" layoutY="388.0" mnemonicParsing="false" onAction="#addCustomerBtnPressed" prefHeight="48.0" prefWidth="134.0" text="Add a customer">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="countryComboBox" layoutX="274.0" layoutY="186.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#setUpCityCombox" prefHeight="27.0" prefWidth="167.0" promptText="Select a Country" />
+      <Label layoutX="324.0" layoutY="169.0" text="Country" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+﻿Jul 19, 2019 2:09:34 PM AppointmentSystem.View_Controller.LoginController signInButtonPressed
+INFO: Login: SUCCESS by User: ed at 2019-07-19T14:09:34.640 America/Los_Angeles
+Jul 19, 2019 2:21:20 PM AppointmentSystem.View_Controller.LoginController signInButtonPressed
+INFO: Login: FAILED by Username tried: test at 2019-07-19T14:21:20.354 America/Los_Angeles
+7 19, 2019 2:23:28 午後 AppointmentSystem.View_Controller.LoginController signInButtonPressed
+情報: Login: FAILED by Username tried:  at 2019-07-19T14:23:28.141 America/Los_Angeles
+7 19, 2019 2:26:02 午後 AppointmentSystem.View_Controller.LoginController signInButtonPressed
+情報: Login: SUCCESS by User: test at 2019-07-19T14:26:02.236 America/Los_Angeles
+Jul 19, 2019 3:25:45 PM AppointmentSystem.View_Controller.LoginController signInButtonPressed
+INFO: Login: SUCCESS by User: test at 2019-07-19T15:25:45.125 America/Los_Angeles
+Jul 19, 2019 3:42:55 PM AppointmentSystem.View_Controller.LoginController signInButtonPressed
+INFO: Login: SUCCESS by User: test at 2019-07-19T15:42:55.732 America/Los_Angeles
+Jul 19, 2019 3:49:53 PM AppointmentSystem.View_Controller.LoginController signInButtonPressed
+INFO: Login: SUCCESS by User: test at 2019-07-19T15:49:53.269 America/Los_Angeles
+Jul 19, 2019 3:50:48 PM AppointmentSystem.View_Controller.LoginController signInButtonPressed
+INFO: Login: SUCCESS by User: test at 2019-07-19T15:50:48.821 America/Los_Angeles
+Jul 19, 2019 4:06:06 PM AppointmentSystem.View_Controller.LoginController signInButtonPressed
+INFO: Login: FAILED by Username tried: test at 2019-07-19T16:06:06.229 America/Los_Angeles
+Jul 19, 2019 4:16:23 PM AppointmentSystem.View_Controller.LoginController signInButtonPressed
+INFO: Login: SUCCESS by User: test at 2019-07-19T16:16:23.032 America/Los_Angeles
+Jul 19, 2019 4:25:46 PM AppointmentSystem.View_Controller.LoginController signInButtonPressed
+INFO: Login: SUCCESS by User: test at 2019-07-19T16:25:46.321 America/Los_Angeles
+Jul 19, 2019 4:26:35 PM AppointmentSystem.View_Controller.LoginController signInButtonPressed
+INFO: Login: SUCCESS by User: test at 2019-07-19T16:26:35.452 America/Los_Angeles
+Jul 19, 2019 4:32:19 PM AppointmentSystem.View_Controller.LoginController signInButtonPressed
+INFO: Login: SUCCESS by User: test at 2019-07-19T16:32:19.210 America/Los_Angeles

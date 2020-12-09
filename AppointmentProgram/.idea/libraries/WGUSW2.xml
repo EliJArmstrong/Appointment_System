@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="WGUSW2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/WGUSW2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

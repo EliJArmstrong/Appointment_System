@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="277.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentSystem.View_Controller.MenuController">
+   <children>
+      <Button layoutX="372.0" layoutY="232.0" mnemonicParsing="false" onAction="#logoutPressed" text="Logout" />
+      <Button layoutX="14.0" layoutY="232.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#logBtnPressed" text="Logs" />
+      <Button layoutX="20.0" layoutY="106.0" mnemonicParsing="false" onAction="#customerBtnPressed" prefHeight="35.0" prefWidth="143.0" text="Customers" textFill="#2f0be0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="283.0" layoutY="106.0" mnemonicParsing="false" onAction="#appointmentsBtnPressed" prefHeight="35.0" prefWidth="143.0" text="Appointments" textFill="#360ccd">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="149.0" layoutY="175.0" mnemonicParsing="false" onAction="#reportBtnPressed" prefHeight="35.0" prefWidth="143.0" text="Reports" textFill="#0d1dcd">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="128.0" layoutY="30.0" text="Main Menu">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

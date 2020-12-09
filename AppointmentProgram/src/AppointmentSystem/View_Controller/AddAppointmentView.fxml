@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentSystem.View_Controller.AddAppointmentController">
+   <children>
+      <Label layoutX="94.0" layoutY="149.0" text="Meeting Type" />
+      <ComboBox fx:id="typeComboBox" layoutX="39.0" layoutY="166.0" prefHeight="27.0" prefWidth="194.0" promptText="Choose a meeting type" />
+      <Label layoutX="101.0" layoutY="251.0" text="Time (Local)" />
+      <Label layoutX="101.0" layoutY="200.0" text="Date (Local)" />
+      <ComboBox fx:id="timeComboBox" layoutX="40.0" layoutY="268.0" prefHeight="27.0" prefWidth="194.0" promptText="Choose a meeting time" />
+      <DatePicker fx:id="datePicker" layoutX="39.0" layoutY="217.0" prefHeight="25.0" prefWidth="194.0" promptText="Select a date" />
+      <Label layoutX="104.0" layoutY="97.0" text="Consultant" />
+      <Label layoutX="103.0" layoutY="46.0" text="Customer" />
+      <ComboBox fx:id="consultantComboBox" layoutX="37.0" layoutY="114.0" prefHeight="27.0" prefWidth="194.0" promptText="Select a consultant" />
+      <ComboBox fx:id="customerComboBox" layoutX="38.0" layoutY="63.0" prefHeight="27.0" prefWidth="194.0" promptText="Select a customer" />
+      <Label layoutX="60.0" layoutY="14.0" text="Add Appointment">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="178.0" layoutY="345.0" mnemonicParsing="false" onAction="#addBtnPressed" prefHeight="27.0" prefWidth="61.0" text="Add" />
+      <Button layoutX="40.0" layoutY="345.0" mnemonicParsing="false" onAction="#cancelBtnPressed" text="Cancel" />
+   </children>
+</AnchorPane>
